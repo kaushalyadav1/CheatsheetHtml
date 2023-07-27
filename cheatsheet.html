@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cheatsheet.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>HTML Cheatsheet by SpecBits</title>
+</head>
+
+<body>
+
+    <nav>
+        <span class="logo"><img src="copy-icon-9.png" alt=""></span>
+        <div class="content center">
+            This HTML Cheatsheet is For You!
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <ol>
+            <li><b>HTML Boilerplate : </b>This is the basic html boilerplate code
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;-- Content goes here..... --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </li> <br>
+
+            <li><b>HTML comments : </b>Comments are not displayed by the browser, but they can help document your HTML source code.
+                <pre class="language-html"><code>&lt;!-- Html comment --&gt;</code></pre>
+            </li>
+
+            <li><b>Heading Tags : </b>The <b>h1</b> to <b>h6</b> tags are used to define headings or subheadings within a web page. These tags represent different levels of importance or hierarchy, with <b>h1</b> being the highest and <b>h6</b> being the lowest.</li> <br>
+            <b>h1 tag : </b>This is h1 tag
+                <pre class="language-html"><code>&lt;h1&gt;h1 tag&lt;/h1&gt;</code></pre>
+            
+            <b>h2 tag : </b>This is h2 tag
+                <pre class="language-html"><code>&lt;h2&gt;h2 tag&lt;/h2&gt;</code></pre>
+
+            <b>h3 tag : </b>This is h3 tag
+                <pre class="language-html"><code>&lt;h3&gt;h3 tag&lt;/h3&gt;</code></pre>
+
+            <b>h4 tag : </b>This is h4 tag
+                <pre class="language-html"><code>&lt;h4&gt;h4 tag&lt;/h4&gt;</code></pre>
+
+            <b>h5 tag : </b>This is h5 tag
+                <pre class="language-html"><code>&lt;h5&gt;h5 tag&lt;/h5&gt;</code></pre>
+
+            <b>h6 tag : </b>This is h6 tag
+                <pre class="language-html"><code>&lt;h6&gt;h6 tag&lt;/h6&gt;</code></pre>
+
+            <li><b>p tag : </b>The <b>p</b> tag is used to define a paragraph of text. The "p" stands for "paragraph." It is one of the most commonly used tags for organizing and presenting text content on a web page.
+                <pre class="language-html"><code>&lt;p&gt;This is Paragraph&lt;/p&gt;</code></pre>
+            </li>
+
+            <li><b>pre tag : </b>The <b>pre</b> tag is used to define preformatted text. The "pre" stands for "preformatted." It allows you to display text exactly as it is written in the HTML code, preserving whitespace, line breaks, and indentation.
+                <pre class="language-html"><code>&lt;pre&gt;
+    Hello
+    Good morning
+    This is Kaushal
+    From SpecBits
+&lt;/pre&gt;</code></pre>
+            </li>
+
+            <li><b>span tag : </b>The <b>span</b> tag is typically used when you want to apply CSS styles or add scripting behaviors to a specific portion of text within a larger block of content.
+                <pre class="language-html"><code>&lt;p&gt;This is a &lt;span style="color: blue;"&gt;blue&lt;/span&gt; word.&lt;/p&gt;</code></pre>
+            </li>
+
+            <li><b>ol tag : </b>The ol tag in HTML is used to create an ordered list , which represents a list of items in a specific order.
+                <pre class="language-html"><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </li>
+
+            <li><b>ul tag : </b>The ul tag in HTML is used to create an unordered list , which represents a list of items without any specific order or sequence.
+                <pre class="language-html"><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </li>
+
+            <li><b>li tag : </b>The li tag in HTML is used to define an individual item within a list. It stands for "list item" and is commonly used in both ordered lists (ol) and unordered lists (ul).
+                <pre class="language-html"><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </li>
+
+            <li><b>a tag : </b>
+                The a tag in HTML is used to create hyperlinks, also known as anchor links, which allow you to link to other web pages, files, or specific locations within the same page.
+                <pre class="language-html"><code>&lt;a href="url"&gt;Link text&lt;/a&gt;
+
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+
+&lt;a href="#section-id"&gt;Jump to Section&lt;/a&gt;
+
+&lt;a href="mailto:info@example.com"&gt;Contact Us&lt;/a&gt;
+
+&lt;a href="documents/document.pdf" download&gt;Download Document&lt;/a&gt;</code></pre>
+The <b>download</b> attribute, when present, suggests to the browser to download the linked file instead of navigating to it. <br><br>
+
+We can use the <b>a</b> tag within a <b>button</b> tag or an image tag <b>img</b> to create clickable buttons or images that act as links.
+            </li> <br>
+
+            <li><b>img tag : </b>The img tag in HTML is used to embed images into a web page. It allows you to display images on your website by referencing the image file using the src attribute.
+                <pre class="language-html"><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+
+                Embedding an image from an external source:
+                <pre class="language-html"><code>&lt;img src="https://www.example.com/image.jpg" alt="Example Image"&gt;</code></pre>
+
+                Embedding an image from a local directory:
+                <pre class="language-html"><code>&lt;img src="images/image.jpg" alt="Example Image"&gt;</code></pre>
+The <b>src</b> attribute specifies the source URL or file path of the image. It can be an absolute URL or a relative URL. <br><br>
+The <b>alt</b> attribute provides alternative text for the image. It serves as a textual description of the image and is displayed if the image fails to load.
+            </li> <br>
+
+            <li><b>audio tag : </b>The <b>audio</b> tag is used to embed audio content, such as music, sound effects, or speech, directly into a web page. It provides a way to play audio files without relying on external plugins or players.
+                <pre class="language-html"><code>&lt;audio src="audiofile.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+                The <b>src</b> attribute points to the location of the audio file "audiofile.mp3". <br> <br>
+                The <b>controls</b> attribute enables the default audio controls, such as play, pause, and volume controls, allowing users to interact with the audio player. <br> <br>
+
+                You can also provide alternative audio formats by including multiple <b>source</b> elements within the <b>audio</b> tag. This ensures compatibility across different browsers that support different audio formats.
+                <pre class="language-html"><code>&lt;audio controls&gt;
+    &lt;source src="audiofile.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audiofile.ogg" type="audio/ogg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;</code></pre>
+
+                The <b>source</b> elements provide two audio sources, "audiofile.mp3" in MPEG format and "audiofile.ogg" in Ogg format. The browser will choose the supported format automatically.
+            </li> <br>
+
+            <li><b>video tag : </b>The <b>video</b> tag is used to embed videos directly into a web page. It provides a way to display video content without relying on external plugins or players.
+                <pre class="language-html"><code>&lt;video src="videofile.mp4" controls&gt;&lt;/video&gt;</code></pre>
+                You can add <b>CSS</b> for styling.
+                <pre class="language-html"><code>&lt;video src="videofile.mp4" controls width="400px" height="500px"&gt;&lt;/video&gt;</code></pre>
+                The <b>src</b> attribute points to the location of the video file "videofile.mp4". <br> <br>
+                The <b>controls</b> attribute enables the default video controls, such as play, pause, volume, and progress bar,
+                allowing users to interact with the video player. <br> <br>
+
+                You can also provide alternative video formats using multiple <b>source</b> elements within the <b>video</b> tag to
+                ensure compatibility across different browsers.
+                <pre class="language-html"><code>&lt;video controls&gt;
+    &lt;source src="videofile.mp4" type="video/mp4"&gt;
+    &lt;source src="videofile.webm" type="video/webm"&gt;
+    Your browser does not support the video element.
+&lt;/video&gt;</code></pre>
+
+                The <b>source</b> elements provide two video sources, "videofile.mp4" in MP4 format and "videofile.ogg" in WebM
+                format. The browser will choose the supported format automatically.
+
+                <pre class="language-html"><code>&lt;video controls autoplay muted&gt;
+    &lt;source src="videofile.mp4" type="video/mp4"&gt;
+    &lt;source src="videofile.webm" type="video/webm"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+
+                The <b>autoplay</b> attribute is a boolean attribute. <br><br>
+
+                When present, the video will automatically start playing.<br><br>
+
+                <b>Note:-</b> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. <br><br>
+
+                Add <b>muted</b> after <b>autoplay</b> to let your video file start playing automatically (but muted).
+            </li> <br>
+
+            <li><b>table tag : </b>The <b>table</b> tag in HTML is used to create tables that organize and display tabular data in a structured format on a web page. Tables consist of rows and columns, and each cell within the table contains data. <br><br>
+                The <b>table</b> tag serves as the container for the entire table structure. <br> <br>
+                Rows are defined using the <b>tr</b> (table row) tag. Each row contains cells or data.  <br><br>
+                Cells within the table are created using the <b>td</b> (table data) tag. They hold the actual data values. <br><br>
+                For header cells, the <b>th</b> (table header) tag is used. It typically appears in the first row of the table and provides labels for the columns or any additional headings. <br><br>
+                The structure of the table is defined by placing the appropriate number of cells within each row. All rows should have an equal number of cells to maintain the table structure. <br><br>
+                CSS can be used to style the table, including its borders, spacing, background colors, fonts, and more.
+                <pre class="language-html"><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;th&gt;Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+        &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 4&lt;/td&gt;
+        &lt;td&gt;Data 5&lt;/td&gt;
+        &lt;td&gt;Data 6&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+The first row contains header cells denoted by <b>th</b> tags, while subsequent rows contain regular data cells represented by <b>td</b> tags. <br><br>
+Tables are commonly used for displaying structured data, such as financial information, product listings, timetable schedules, and more. It's important to use tables appropriately and ensure that they enhance the accessibility and usability of the web page. <br><br>
+For complex table layouts and advanced features, you may need additional attributes and techniques such as <b>caption</b> for table captions, <b>thead</b>, <b>tbody</b>, and <b>tfoot</b> for sectioning the table, or CSS frameworks designed specifically for tables. <br><br>
+You can use attributes like <b>colspan</b> and <b>rowspan</b> to span cells across multiple columns or rows,respectively. <br><br>
+
+<pre class="language-html"><code>&lt;table&gt;
+    &lt;caption&gt;Details&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th colspan="3"&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+            &lt;th&gt;Header 3&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td rowspan="2"&gt;Data 1&lt;/td&gt;
+            &lt;td&gt;Data 2&lt;/td&gt;
+            &lt;td&gt;Data 3&lt;/td&gt;
+            &lt;td&gt;Data 4&lt;/td&gt;
+            &lt;td&gt;Data 5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Data 6&lt;/td&gt;
+            &lt;td&gt;Data 7&lt;/td&gt;
+            &lt;td&gt;Data 8&lt;/td&gt;
+            &lt;td&gt;Data 9&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </li> <br>
+
+            <li><b>form tag : </b>The <b>form</b> tag is used to create an interactive form on a web page. Forms provide a way for users to input and submit data, such as text, numbers, selections, and more. The data entered in a form is typically sent to a server for processing. <br><br>
+            The <b>form</b> tag serves as the container for all the form elements. <br><br>
+            You define various input fields and controls within the <b>form</b> tag. <br><br>
+            You can also use attributes like <b>required</b>, <b>placeholder</b>, and pattern to enforce field validation and provide user-friendly instructions. <br><br>
+                <pre class="language-html"><code>&lt;form&gt;
+    &lt;label&gt;Name:&lt;/label&gt;
+    &lt;input type="text" placeholder="Enter your name"&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" required&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+            </li> <br>
+
+            <li><b>input tag : </b>The <b>input</b> tag is used to create interactive form controls where users can input or select data. The type attribute of the <b>input</b> tag specifies the type of input control to be displayed. Here's a breakdown of the <b>input</b> tag and some of its commonly used types with examples:
+                <pre class="language-html"><code>&lt;input type="..."&gt;</code></pre> <br>
+                <b>Text Input:</b> &lt;input type="text"&gt;
+                <pre class="language-html"><code>&lt;input type="text"&gt;</code></pre> <br>
+                <b>Email Input:</b> &lt;input type="email"&gt;
+                <pre class="language-html"><code>&lt;input type="email"&gt;</code></pre> <br>
+                <b>Number Input:</b> &lt;input type="number"&gt;
+                <pre class="language-html"><code>&lt;input type="number"&gt;</code></pre> <br>
+                <b>Password Input:</b> &lt;input type="password"&gt;
+                <pre class="language-html"><code>&lt;input type="password"&gt;</code></pre> <br>
+                <b>Date Input:</b> &lt;input type="date"&gt;
+                <pre class="language-html"><code>&lt;input type="date"&gt;</code></pre> <br>
+                <b>Radio Button:</b> &lt;input type="radio"&gt;
+                <pre class="language-html"><code>&lt;input type="radio" name="gender"&gt; Male
+&lt;input type="radio" name="gender"&gt; Female</code></pre> <br>
+<b>Checkbox:</b> &lt;input type="checkbox"&gt;
+                <pre class="language-html"><code>&lt;input type="checkbox" name="fruit"&gt; Apple
+&lt;input type="checkbox" name="fruit"&gt; Banana</code></pre>
+            </li> <br>
+
+            <li><b>select tag : </b>The <b>select</b> tag is used to create a dropdown list or a selection menu. It allows users to choose one or more options from a list of predefined values. <br> <br>
+                
+                The <b>select</b> tag is typically used in conjunction with <b>option</b> tags to define the available choices. Here's the basic structure of the <b>select</b> tag:
+
+                <pre class="language-html"><code>&lt;label&gt;Select&lt;/label&gt;
+&lt;select&gt;
+    &lt;option value="value1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="value2"&gt;Option 2&lt;/option&gt;
+    &lt;!-- More options... --&gt;
+&lt;/select&gt;</code></pre>
+
+                <b>select</b>: The main container tag that creates the dropdown list. <br><br>
+
+                <b>option</b>: The child tags of <b>select</b> that represent individual options within the list. <br><br>
+
+                <b>value</b>: The attribute of the <b>option</b> tag that specifies the value associated with each option. This value is what gets sent to the server when the form is submitted. <br><br>
+
+                Text content within <b>option</b>: This is the visible text that represents each option in the dropdown list. <br>
+
+                <pre class="language-html"><code>&lt;label for=""&gt;Country&lt;/label&gt;
+&lt;select name="country"&gt;
+    &lt;option value="usa"&gt;United States&lt;/option&gt;
+    &lt;option value="canada"&gt;Canada&lt;/option&gt;
+    &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+    &lt;option value="australia"&gt;Australia&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+                Additionally, the <b>select</b> tag supports other attributes such as <b>name</b>, <b>multiple</b>, and <b>disabled</b> <br><br>
+
+                <b>name</b>: Specifies the name of the dropdown list, which is used to identify the selected option(s) when the form is submitted. <br><br>
+
+                <b>multiple</b>: When added to the <b>select</b> tag, it allows users to select multiple options from the dropdown list. <br><br>
+                <b>disabled</b>: Disables the dropdown list, making it non-editable and preventing user interaction. <br>
+
+                <pre class="language-html"><code>&lt;label for=""&gt;Color&lt;/label&gt;
+&lt;select name="colors" multiple&gt;
+    &lt;option value="red"&gt;Red&lt;/option&gt;
+    &lt;option value="green"&gt;Green&lt;/option&gt;
+    &lt;option value="blue"&gt;Blue&lt;/option&gt;
+    &lt;option value="yellow"&gt;Yellow&lt;/option&gt;
+&lt;/select&gt;
+    
+&lt;label for=""&gt;Select&lt;/label&gt;
+&lt;select name="disabled-dropdown" disabled&gt;
+    &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                
+            </li> <br>
+
+            <li><b>textarea tag : </b>The <b>textarea</b> tag is used to create a multiline text input area where users can enter multiple lines of text. It is typically used when you want to allow users to input a longer text or provide comments, descriptions, or other textual content.
+                <pre class="language-html"><code>&lt;textarea rows="number_of_rows" cols="number_of_columns"&gt;Default text&lt;/textarea&gt;</code></pre> 
+
+        <b>rows</b>: Specifies the number of visible rows or lines in the textarea. <br><br>
+
+        <b>cols</b>: Specifies the number of visible columns or characters per line in the textarea. <br><br>
+
+        Text content within <b>textarea</b>: This is the default text or initial value that appears inside the textarea. It can be pre-filled with content or left blank as a placeholder.
+
+        <pre class="language-html"><code>&lt;textarea rows="4" cols="40"&gt;Enter your message here&lt;/textarea&gt;</code></pre>
+
+        The <b>textarea</b> tag can also have additional attributes, such as name and placeholder: <br><br>
+
+        <b>name</b>: Specifies the name of the textarea, which is used to identify the input when the form is submitted. <br><br>
+        <b>placeholder</b>: Provides a hint or example text that appears inside the textarea as a placeholder to guide the user's input.
+
+        <pre class="language-html"><code>&lt;textarea name="message" rows="6" cols="50" placeholder="Type your message here"&gt;&lt;/textarea&gt;</code></pre>
+
+        The <b>textarea</b> has a <b>name</b> attribute set to "message", which will be used to identify the input when the form is submitted.
+
+            </li> <br>
+
+            <li><b>sub tag : </b>The <b>sub</b> tag is used to render text as subscript, appearing slightly below the normal line of text. It is commonly used for chemical formulas, mathematical equations, footnotes, and other instances where smaller text is required below the baseline.
+                <pre class="language-html"><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></pre>
+            </li> <br>
+
+            <li><b>sup tag : </b>The <b>sup</b> tag is used to display text as superscript, appearing slightly above the normal line of text. It is commonly used for mathematical exponents, footnotes, ordinal numbers, and other instances where smaller text is required above the baseline.
+                <pre class="language-html"><code>x&lt;sup&gt;2&lt;/sup&gt;</code></pre>
+            </li> <br>
+
+            <li><b>b tag : </b>The <b>b</b> tag is an HTML element used to define text that should be displayed in a bold font weight. It is one of the basic formatting tags in HTML and is often used to emphasize certain words or phrases within a paragraph or heading.
+                <pre class="language-html"><code>&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; text.&lt;/p&gt;</code></pre>
+            </li> <br>
+
+            <li><b>strong tag : </b>The <b>strong</b> tag is an HTML element used to define text that should be displayed with strong importance or emphasis. <br><br>
+                It is similar to the <b>b</b> tag in that it also renders text in a bold font weight by default, but it goes beyond
+                    just visual styling and carries semantic meaning.
+                <pre class="language-html"><code>&lt;p&gt;This is a &lt;strong&gt;strong&lt;/strong&gt; text.&lt;/p&gt;</code></pre>
+                It's worth noting that the <b>b</b> tag is a presentational element, meaning it is used for styling purposes rather than conveying semantic meaning. For emphasizing or highlighting text that carries semantic meaning, it is recommended to use the <b>strong</b> tag instead.
+            </li> <br>
+
+            <li><b>br tag : </b>The <b>br</b> tag is an HTML element used to create line breaks within the content of a webpage. It stands for "line break." It is a self-closing tag, which means it does not require a closing tag.
+                <pre class="language-html"><code>&lt;p&gt;This is the first line.&lt;br&gt;
+This is the second line.&lt;/p&gt;</code></pre>
+                It's important to note that the <b>br</b> tag should not be used excessively for general text formatting purposes. HTML provides other elements and CSS for structuring and styling content.
+            </li> <br>
+
+            <li><b>hr tag : </b>The <b>hr</b> tag is an HTML element used to insert a horizontal rule or line across the content of a webpage. It stands for "horizontal rule." It is a self-closing tag, which means it does not require a closing tag.
+                <pre class="language-html"><code>&lt;p&gt;This is some text above the horizontal rule.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;This is some text below the horizontal rule.&lt;/p&gt;</code></pre>
+            </li> <br>
+
+            <li><b>button tag : </b>The <b>button</b> tag is an HTML element used to create a clickable button on a webpage. It represents a button control that users can interact with to perform an action or trigger a specific functionality.
+                <pre class="language-html"><code>&lt;button type="button"&gt;Click Me!&lt;/button&gt;</code></pre>
+
+        The type attribute specifies the behavior of the button. The <b>type="button"</b> attribute indicates that the button is a regular button control and doesn't have any specific default behavior. However, there are other values that can be used with the type attribute: <br><br>
+
+        <b>type="submit"</b>: This indicates that the button is used to submit a form when clicked. It is often used in conjunction with a <b>form</b> element. 
+        
+        <pre class="language-html"><code>&lt;button type="submit"&gt;Submit!&lt;/button&gt;</code></pre>
+        
+        <b>type="reset"</b>: This indicates that the button is used to reset a form to its initial values.
+
+        <pre class="language-html"><code>&lt;button type="reset"&gt;Reset!&lt;/button&gt;</code></pre>
+                
+        <b>type="image"</b>: This allows you to use an image as the button, where the image itself acts as the clickable area.
+
+        <pre class="language-html"><code>&lt;button type="image"&gt;Add image!&lt;/button&gt;</code></pre>
+            </li> <br>
+
+            <li><b>footer tag : </b>The <b>footer</b> tag is an HTML element used to define the footer section of a webpage or a section within a larger document. It represents the bottom part of a webpage, typically containing information about the author, copyright notice, contact information, and other related content.
+                <pre class="language-html"><code>&lt;footer&gt;
+    &lt;p&gt;&copy; 2023 MyWebsite. All rights reserved.&lt;/p&gt;
+    &lt;p&gt;Contact: email@example.com&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+        The <b>footer</b> tag is typically used once per webpage to define the primary footer section. However, it can also be used within other structural elements, such as <b>article</b>, <b>section</b>, or <b>main</b>, to create a footer specific to that particular section of content.
+            </li> <br>
+
+            <li><b>div tag : </b>The <b>div</b> tag is an HTML element used to create a generic container or division on a webpage. It is a versatile and widely used element that does not carry any inherent meaning or semantic value. Instead, it serves as a structural and styling element that allows developers to group and manipulate other elements.
+                <pre class="language-html"><code>&lt;div class="container"&gt;
+    &lt;h1&gt;Welcome to my website!&lt;/h1&gt;
+    &lt;p&gt;This is the main content of the page.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+        The <b>div</b> tag is often used in conjunction with CSS to apply styling, positioning, and layout properties to the grouped elements. By assigning a class or an ID to the <b>div</b>, you can target and style it specifically or select its child elements for styling purposes. <br><br>
+
+        Furthermore, the <b>div</b> tag can be nested within other <b>div</b> tags, allowing for the creation of complex structures and layouts. This nesting can help organize and group elements together based on their functional or visual relationships. <br><br>
+
+        Due to its lack of semantic meaning, the <b>div</b> tag is commonly used as a building block for creating the structure of a webpage or separating sections of content. It provides a flexible and adaptable container that can be styled and manipulated according to the specific design and layout requirements.
+            </li> <br>
+
+            <li><b>header tag : </b>The <b>header</b> tag in HTML is a semantic element that represents the introductory or navigational section of a web page or a section within it. It is typically used to group together elements that appear at the top of a page, such as the site logo, site title, navigation menu, search bar, or any other content that is considered to be part of the header. <br> <br>
+
+            The <b>header</b> tag is usually placed within the <b>body</b> element and can be used once per page or multiple times within different sections of the page.
+
+                <pre class="language-html"><code>&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+        &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;!-- Rest of the page content goes here --&gt;
+    
+&lt;/body&gt;</code></pre>
+
+        By using the <b>header</b> tag, you provide semantic meaning to the content within it, making it easier for search engines and assistive technologies to understand the purpose and structure of the content.
+            </li> <br>
+
+            <li><b>section tag : </b>The <b>section</b> tag in HTML is a semantic element that represents a standalone section of a web page or document. It is typically used to group related content together and provide structure and organization to the page. <br><br>
+
+        The <b>section</b> tag is meant to be used for larger content areas that can be considered as distinct and self-contained sections. These sections can be thought of as chapters, topics, or major parts of the document.
+
+                <pre class="language-html"><code>&lt;body&gt;
+    &lt;header&gt;
+        &lt;!-- header content goes here --&gt;
+    &lt;/header&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;About Us&lt;/h2&gt;
+        &lt;p&gt;This section contains information about our company and its history.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section&gt;
+        &lt;h2&gt;Products&lt;/h2&gt;
+        &lt;p&gt;This section showcases our range of products and their features.&lt;/p&gt;
+    &lt;/section&gt;
+                
+    &lt;footer&gt;
+        &lt;!-- footer content goes here --&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+
+        It's important to note that the <b>section</b> tag should be used when there is no more appropriate semantic element available. If there is a more specific semantic element that accurately describes the purpose of the content, such as <b>article</b>, <b>aside</b>, or <b>main</b>, it is generally recommended to use those instead.
+            </li> <br>
+
+            <li><b>nav tag : </b> The <b>nav</b> tag in HTML is used to define a section of a web page that contains navigation links. It is typically used to create menus, navigation bars, or any other set of links that help users navigate through different sections or pages of a website.
+                <pre class="language-html"><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+It's important to note that using the <b>nav</b> tag alone does not automatically create a functional navigation menu. CSS styling and JavaScript may be required to style the navigation and make it interactive, such as adding hover effects or handling click events.
+            </li> <br>
+
+            <li><b>script tag : </b>The <b>script</b> tag in HTML is used to embed or reference JavaScript code within an HTML document. JavaScript is a
+                programming language that allows you to add interactivity, dynamic behavior, and other client-side functionality to web pages. <br><br>
+
+                There are two primary ways to use the <b>script</b> tag in HTML: <br>
+
+            <b>Inline Script</b>: You can include JavaScript code directly within the <b>script</b> tags in the HTML document.
+                <pre class="language-html"><code>&lt;script&gt;
+    // JavaScript code goes here
+    alert("Hello, World!");
+&lt;/script&gt;</code></pre>
+
+    <b>External Script</b>: You can also include JavaScript code from an external file by specifying the source file using the src attribute of the <b>script</b> tag.  
+
+    <pre class="language-html"><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+
+    It's important to note that the <b>script</b> tag can be placed anywhere within the HTML document, but it is typically placed in the <b>head</b> section or at the end of the <body> section. Placing scripts at the end of the <b>body</b> section is a common practice because it allows the HTML content to load before executing the JavaScript code, which can improve page loading performance.
+            </li> <br>
+
+            <li><b>summary tag : </b>The <b>summary</b> tag in HTML is used in conjunction with the <b>details</b> tag to create an expandable and collapsible section of content, often referred to as an "accordion" or a "collapsible panel". The <b>summary</b> element serves as a heading or a title for the content that can be expanded or collapsed.
+
+                <pre class="language-html"><code>&lt;details&gt;
+    &lt;summary&gt;Click to expand&lt;/summary&gt;
+    &lt;p&gt;This is the hidden content that will be shown when the summary is clicked.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+
+    When the page is loaded, the content inside the <b>details</b> element is hidden by default. However, when a user clicks on the summary, the hidden content is revealed or expanded, and subsequent clicks will collapse it again. <br><br>
+
+    It's important to note that the <b>summary</b> and <b>details</b> tags are supported in modern web browsers, but may not be fully supported in older browsers. To ensure compatibility, you can provide alternative content or styling for browsers that do not support the <b>details</b> and <b>summary</b> tags.
+            </li> <br>
+
+            <li><b>progress tag : </b>The <b>progress</b> tag in HTML is used to represent the progress of a task or an event. It provides a visual representation of the completion status of a particular process, such as file uploads, form submissions, or any other task that involves a measurable progress.
+
+                <pre class="language-html"><code>&lt;progress value="50" max="100"&gt;&lt;/progress&gt;</code></pre>
+
+    You can dynamically update the value of the progress bar using JavaScript by accessing the <b>progress</b> element and
+    modifying its value attribute.
+
+<pre class="language-html"><code>&lt;progress id="myProgress" value="0" max="100"&gt;&lt;/progress&gt;
+&lt;script&gt;
+    var progressBar = document.getElementById("myProgress");
+    // Update the progress value
+    progressBar.value = 75;
+&lt;/script&gt;</code></pre>
+
+    You can also provide text content within the <b>progress</b> element to display additional information about the
+    progress, such as a percentage or a description of the task.
+
+    <pre class="language-html"><code>&lt;progress value="50" max="100"&gt;50%&lt;/progress&gt;</code></pre>
+            </li> <br>
+
+            <li><b>style tag : </b>The <b>style</b> tag in HTML is used to define inline CSS (Cascading Style Sheets) within an HTML document. CSS is a language used for describing the visual presentation of a web page, including its layout, colors, fonts, and other stylistic aspects. <br><br>
+
+            The <b>style</b> tag is typically placed within the <b>head</b> section of an HTML document. It can contain CSS rules and declarations that will be applied to the elements of the HTML document.
+
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    h1 {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    p {
+        color: green;
+        font-size: 14px;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </li> <br>
+
+            <li><b>link tag : </b>The <b>link</b> tag in HTML is used to link an external resource, typically a stylesheet, to an HTML document. It allows you to incorporate external CSS files, icon files, or other linked resources into your web page.
+
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- HTML content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            By using the <b>link</b> tag, you can keep your CSS code separate from your HTML document, allowing for better organization and reusability. The linked CSS file can contain all the styles for your HTML elements, such as fonts, colors, layout, and more.
+            </li> <br>
+
+            <li><b>abbr tag : </b>The <b>abbr</b> tag in HTML is used to define an abbreviation or an acronym within a web page. It is primarily used to provide an explanation or expansion of the abbreviated term for better understanding or accessibility.
+
+                <pre class="language-html"><code>&lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; provides global health guidance.&lt;/p&gt;</code></pre>
+            </li> <br>
+
+        </ol>
+
+    </div>
+
+</body>
+
+</html>
